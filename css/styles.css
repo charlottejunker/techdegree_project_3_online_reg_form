@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-/* organisation and style of headings and labels */
+/* appearance of sections */
 
 header {
   text-align: center;
@@ -57,27 +57,6 @@ legend {
   margin-bottom: 15px;
 }
 
-.contact, footer {
-    border-top: medium double #D2338D;
-    color: #D2338D;
-    padding-top: 25px;
-}
-
-footer p {
-  padding-top: 15px;
-}
-
-.news, .more, .referral {
-	border-top: 10px;
-	box-shadow: 0 10px 10px -10px #D2338D inset;
-  padding-top: 30px;
-  margin-top: 15px;
-}
-
-.referral {
-  margin-bottom: 15px;
-}
-
 
 label {
   display: block;
@@ -90,6 +69,10 @@ label.sub {
   display: inline-block;
   font-size: 1em;
   padding-left: 10px;
+}
+
+.referral {
+  margin-bottom: 15px;
 }
 
 button {
@@ -112,7 +95,27 @@ footer {
   padding: 10px 0;
 }
 
-/* input fields */
+footer p {
+  padding-top: 15px;
+}
+
+/* border styles */
+
+.contact, footer {
+    border-top: medium double #D2338D;
+    color: #D2338D;
+    padding-top: 25px;
+}
+
+
+.news, .more, .referral {
+	border-top: 10px;
+	box-shadow: 0 10px 10px -10px #D2338D inset;
+  padding-top: 30px;
+  margin-top: 15px;
+}
+
+/* appearance of fields */
 
 input[type="text"],
 input[type="email"],
@@ -128,6 +131,11 @@ input[type="postal_code"] {
   width: 100%;
   cursor: pointer;
   transition-duration: .5s;
+}
+
+
+#postcode {
+  width: 200px;
 }
 
 select {
@@ -159,11 +167,8 @@ label[for="javascript"] {
   margin-bottom: 20px;
 }
 
-#postcode {
-  width: 200px;
-}
 
-/* UI states */
+/* UI */
 
 input:focus,
 textarea:focus,
@@ -172,7 +177,6 @@ select:focus {
   outline: none;
   border-bottom: 2px solid #D2338D;
   background-color: #faeaf3;
-
 }
 
 input[type="checkbox"],
@@ -196,7 +200,6 @@ input[type="radio"]:checked + label {
   fieldset {
     width: 100%;
   }
-
 }
 
 @media screen and (min-width: 1281px) {
@@ -243,9 +246,6 @@ input[type="radio"]:checked + label {
   .more_referral {
     float: right;
     width: 40%;
-  }
-
-  .more_referral {
     margin-left: 10%;
   }
 
