@@ -71,6 +71,11 @@ label.sub {
   padding-left: 10px;
 }
 
+input[placeholder="Required"] {
+  text-align: right;
+  font-style: italic;
+}
+
 .referral {
   margin-bottom: 15px;
 }
@@ -91,24 +96,22 @@ button {
 footer {
   text-align: center;
   font-size: .8em;
-  color: #7C858B;
-  padding: 10px 0;
-}
-
-footer p {
-  padding-top: 15px;
+  color: #7C858B  !important;
 }
 
 /* border styles */
 
-.contact, footer {
+.contact,
+footer {
     border-top: medium double #D2338D;
     color: #D2338D;
     padding-top: 25px;
 }
 
 
-.news, .more, .referral {
+.news,
+.more,
+.referral {
 	border-top: 10px;
 	box-shadow: 0 10px 10px -10px #D2338D inset;
   padding-top: 30px;
@@ -162,7 +165,7 @@ textarea {
 }
 
 label[for="learning"],
-label[for="plain_text"],
+label[for="plain"],
 label[for="javascript"] {
   margin-bottom: 20px;
 }
@@ -225,12 +228,15 @@ input[type="radio"]:checked + label {
 
   }
 
-  .city, .county, .postcode {
+  .city,
+  .county,
+  .postcode {
     width: 30%;
     float: left;
   }
 
-  .county, .postcode {
+  .county,
+  .postcode {
     margin-left: 5%;
   }
 
