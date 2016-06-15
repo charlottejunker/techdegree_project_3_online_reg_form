@@ -71,9 +71,26 @@ label.sub {
   padding-left: 10px;
 }
 
-input[placeholder="Required"] {
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   text-align: right;
   font-style: italic;
+  padding-right: 5px;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  text-align: right;
+  font-style: italic;
+  padding-right: 5px;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  text-align: right;
+  font-style: italic;
+  padding-right: 5px;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  text-align: right;
+  font-style: italic;
+  padding-right: 5px;
+  opacity: 1;
 }
 
 .referral {

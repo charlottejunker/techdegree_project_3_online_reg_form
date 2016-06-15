@@ -31,11 +31,11 @@
           <legend>Contact information</legend>
 
           <label for="name">Full Name</label>
-          <input type="text" id="name" name="user_name" placeholder="Required" required>
+          <input type="text" id="name" name="user_name" placeholder="Required" required aria-required=”true” pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"  title="firstname lastname">
 
           <div class="email">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="user_email"  placeholder="Required" required>
+            <input type="email" id="email" name="user_email"  placeholder="Required" required aria-required=”true”>
           </div>
 
           <div class="tel">
@@ -168,7 +168,7 @@
 
           <div class="postcode">
             <label for="postcode">Postcode</label>
-            <input type="text" id="postcode" name="user_postcode" placeholder="Required">
+            <input type="text" id="postcode" name="user_postcode" placeholder="Required" aria-required=”true”>
           </div>
 
         </fieldset>
