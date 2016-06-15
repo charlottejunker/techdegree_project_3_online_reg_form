@@ -220,7 +220,19 @@ input[type="radio"]:checked + label {
   fieldset {
     width: 100%;
   }
-}
+
+  .contact input, .contact select {
+    display: inline-block;
+    max-width: 80%;
+  }
+
+  .contact label {
+    width: 15%;
+    float: left;
+    margin-right: 5%;
+    display: inline-block;
+  }
+
 
 @media screen and (min-width: 1281px) {
 
@@ -229,8 +241,12 @@ input[type="radio"]:checked + label {
     max-width: 60%;
   }
 
-  input {
-    display: inline;
+  .contact label {
+    width: 100%;
+  }
+
+  .contact input, .contact select {
+    max-width: 100%;
   }
 
   .email {
@@ -242,7 +258,6 @@ input[type="radio"]:checked + label {
     width: 45%;
     float: left;
     margin-left: 10%;
-
   }
 
   .city,
