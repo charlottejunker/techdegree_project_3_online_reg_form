@@ -135,6 +135,15 @@ footer {
   margin-top: 15px;
 }
 
+.contact legend,
+.news legend,
+.more legend,
+.referral legend {
+  float:left;
+  width: 100%;
+}
+
+
 /* appearance of fields */
 
 input[type="text"],
